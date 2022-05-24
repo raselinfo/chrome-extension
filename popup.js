@@ -3,6 +3,9 @@ const colorGrid = document.querySelector(".colorGrid")
 const colorValue = document.querySelector(".colorValue")
 
 btn.addEventListener("click", async () => {
+   chrome.storage.sync.get("color", ({ color }) => {
+        console.log(color)
+    })
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
