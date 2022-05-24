@@ -1,0 +1,38 @@
+body {
+    background: #fff;
+}
+
+.wrapper {
+    width     : 300px;
+    text-align: center;
+
+}
+
+.changeColorPicker {
+    width        : 200px;
+    outline      : none;
+    border       : none;
+    border-radius: 2px;
+    cursor       : pointer;
+    background   : rgb(255, 221, 0);
+}
+
+.colorGrid {
+    width        : 20px;
+    height       : 20px;
+    border-radius: 5px;
+    display      : inline-block;
+}
+
+.colorValue {
+    margin-left: 3px;
+    display    : inline-block;
+    font-weight: bold;
+}
+
+.selectColor {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-top     : 10px;
+}
